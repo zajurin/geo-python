@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+// import { Task } from '../models/Task';
+// import { Task } from '../models/Taks';
 import { Task } from '../models/Task';
 
 const TaskList = [
@@ -25,7 +27,7 @@ const TaskList = [
 export class TaskService {
   constructor() {}
 
-  getTasks(){
+  getTasks() {
     return TasksList;
   }
 
@@ -35,12 +37,12 @@ export class TaskService {
   addTask(task: Task) {
     TasksList.push(task);
   }
-  editTask(newTaskEdit);{
-    const index = TasksList.findIndex(task => task.id === newTaskEdit.id)
+  editTask(newTaskEdit) {
+    const index = TasksList.findIndex((task) => task.id === newTaskEdit.id);
 
     TaskList[index] = newTaskEdit;
   }
-  deleteTask(_id){
-    TaskList.splice(_id, 1)
+  deleteTask(_id) {
+    TaskList.splice(_id, 1);
   }
 }
