@@ -1,23 +1,21 @@
 import { Injectable } from '@angular/core';
-// import { Task } from '../models/Task';
-// import { Task } from '../models/Taks';
-import { Task } from '../models/Task';
+import { Task } from '../models/Taks';
 
 const TaskList = [
   {
-    id: 1,
-    title: 'Coding',
-    description: 'Which is awesome',
+    "id": 1,
+    "title": "Coding",
+    "description": "Which is awesome"
   },
   {
-    id: 2,
-    title: 'Doing another thing',
-    description: 'that´s fine',
+    "id": 2,
+    "title": "Doing another thing",
+    "description": "that´s fine"
   },
   {
-    id: 3,
-    title: 'what else',
-    description: 'yeah whatever',
+    "id": 3,
+    "title": "what else",
+    "description": "yeah whatever"
   },
 ];
 
@@ -32,7 +30,7 @@ export class TaskService {
   }
 
   getOneTask(_id) {
-    return TasksList.find((task) => task.id === _id);
+    return TasksList.find(task => task.id === _id);
   }
   addTask(task: Task) {
     TasksList.push(task);
