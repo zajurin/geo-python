@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Task } from '../models/Taks';
 
-const TaskList = [
+const TasksList = [
   {
     "id": 1,
     "title": "Coding",
@@ -36,11 +36,11 @@ export class TaskService {
     TasksList.push(task);
   }
   editTask(newTaskEdit) {
-    const index = TasksList.findIndex((task) => task.id === newTaskEdit.id);
+    const index = TasksList.findIndex(task => task.id === newTaskEdit.id)
 
-    TaskList[index] = newTaskEdit;
+    TasksList[index] = newTaskEdit;
   }
   deleteTask(_id) {
-    TaskList.splice(_id, 1);
+    TasksList.splice(_id, 1);
   }
 }
