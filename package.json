@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/zajurin/geo-python#readme",
   "dependencies": {
-    "xlsx": "^0.16.5"
+    "xlsx": "^0.17.0"
   }
 }
